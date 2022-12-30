@@ -74,6 +74,22 @@ namespace BinarySearchTree_058
                     currentNode = currentNode.rightchild;
             }
         }
+
+        public void inorder(Node ptr)
+        {
+            if(ROOT== null)
+            {
+                Console.WriteLine("Tree is Empty");
+                return;
+            }
+            if(ptr != null)
+            {
+                inorder(ptr.leftchild);
+                Console.Write(ptr.info+" ");
+                inorder(ptr.rightchild);
+            }
+        }
+
     }
 
 
