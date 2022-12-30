@@ -137,21 +137,33 @@ namespace BinarySearchTree_058
                     case '1':
                         {
                             Console.WriteLine("Enter a word: ");
-                            string word = Console.WriteLine();
+                            string word = Console.ReadLine();
                             x.insert(word);
                         }
                         break;
 
                     case '2':
                         {
-                            x.inorder(x.ROOT)
+                            x.inorder(x.ROOT);
                         }
                         break;
                     case '3':
                         {
-                            x.preorder(x.ROOT)
+                            x.preorder(x.ROOT);
                         }
-                        break
+                        break;
+                    case '4':
+                        {
+                            x.postorder(x.ROOT);
+                        }
+                        break;
+                    case '5':
+                        return;
+                    default:
+                        {
+                            Console.WriteLine("Invalid Option");
+                            break;
+                        }
                 }
             }
         }
